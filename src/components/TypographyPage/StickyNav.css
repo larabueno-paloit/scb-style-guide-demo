@@ -1,0 +1,6 @@
+.stickyNav {
+}
+.stickyNav.scrolled{
+  top: 50px;
+  position: fixed;
+}
