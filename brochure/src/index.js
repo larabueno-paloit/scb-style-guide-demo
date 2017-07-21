@@ -8,7 +8,6 @@ import IconsPage from './components/IconsPage/IconsPage';
 import TypographyPage from './components/TypographyPage/TypographyPage';
 import TablePage from './components/TablePage/TablePage';
 import { BrowserRouter, Route } from 'react-router-dom';
-import registerServiceWorker from './registerServiceWorker';
 import Nav from './components/Nav/Nav.js';
 
 const Root = () => {
@@ -16,6 +15,7 @@ const Root = () => {
         <BrowserRouter>
           <div className="container">
             <Nav />
+            <div>abc</div>
             <div className="content-wrapper">
               <Route exact path="/" component={App} />
               <Route exact path="/principles" component={PrinciplesPage} />
@@ -30,4 +30,3 @@ const Root = () => {
 }
 
 ReactDOM.render(<Root />, document.getElementById('root'));
-registerServiceWorker();
