@@ -7,11 +7,13 @@
     "react": "^15.6.1",
     "react-codemirror": "^1.0.0",
     "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "react-scripts": "1.0.10",
     "react-scroll": "^1.5.4",
     "react-simple-dropdown": "^3.0.0",
+    "redux": "^3.7.2",
     "styled-components": "^2.1.1"
   },
   "scripts": {
@@ -21,6 +23,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "babel-core": "^6.25.0"
+    "babel-core": "^6.25.0",
+    "redux-devtools": "^3.4.0"
   }
 }

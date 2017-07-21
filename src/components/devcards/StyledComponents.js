@@ -1,6 +1,11 @@
 import React from 'react'
 import styled from 'styled-components';
 
+const DevcardsPage = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+ `
 const RowPassword = styled.div`
  width: 500px;
  display:flex;
@@ -13,6 +18,7 @@ const RowPassword = styled.div`
  `
 const InputBar = styled.input`
  height: 30px;
+ padding: 2px;
 	color: palevioletred;
 	background: papayawhip;
 	border: none;
@@ -29,5 +35,15 @@ const Submit = styled.button`
  border-radius: 3px;
  border: ${props => props.primary ? '2px solid palevioletred' : '2px solid blue;' };
  `
+const SampleWindow = styled.div`
+ width: 80%;
+ padding: 20px 0;
+ border-bottom: 1px dotted black;
+ margin: 0 0 10px 20px;
+ `
+const CodeWindow = styled.div`
+ width: 80%;
+ margin: 0 0 10px 20px;
+ `
 
-export default { RowPassword , InputBar , Submit }
+export default { DevcardsPage , RowPassword , InputBar , Submit , SampleWindow , CodeWindow }

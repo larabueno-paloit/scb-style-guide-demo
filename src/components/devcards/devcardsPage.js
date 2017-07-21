@@ -5,46 +5,56 @@ import 'codemirror/lib/codemirror.css'
 import 'codemirror/mode/javascript/javascript'
 import StyledComponents from './StyledComponents.js';
 
-console.log();
-const foo = String(StyledComponents.RowPassword)
 
-const Display =  <StyledComponents.RowPassword>
-                  <StyledComponents.InputBar type="password" placeholder="Password" />
-                 </StyledComponents.RowPassword>
+const SampleCode1 =
+ `const InputBar = styled.input\`
+   height: 30px;
+  	color: palevioletred;
+  	background: papayawhip;
+  	border: none;
+  	border-radius: 3px;
+   border: 1px solid palevioletred;
+   font-size: 20px;
+  \`;
 
-const Code =
-`const InputBar = styled.input\`
-  height: 30px;
- 	color: palevioletred;
- 	background: papayawhip;
- 	border: none;
- 	border-radius: 3px;
-  border: 1px solid palevioletred;
-  font-size: 20px;
- \`;
+  <RowPassword>
+    <InputBar type="text" placeholder="Some input..." />
+  </RowPassword>`
+const SampleCode2 = String(StyledComponents.RowPassword)
 
- <RowPassword>
-   <InputBar type="password" placeholder="Password" />
- </RowPassword>`
 
-const CodeMirrorOptions = {
- readOnly: true,
- lineNumbers: true,
- mode: 'javascript'
-}
 
-const DevcardsPage = ()=>{
- return(
-  <div>
-   <h1>Devcards</h1>
+class DevcardsPage extends React.Component{
 
-   {
-    Display
-   }
+ constructor(props){
+  super(props)
+  this.state = {text: "Some input..."}
+  this.RenderSample = this.RenderSample.bind(this)
+ }
 
-   <CodeMirror value={foo} options={ CodeMirrorOptions } autoFocus={true} />
-  </div>
- )
+ RenderSample(placeholderText){
+  return(
+   <StyledComponents.RowPassword>
+    <StyledComponents.InputBar type="text" placeholder={placeholderText} />
+   </StyledComponents.RowPassword>
+  )
+ }
+
+ render(){
+  return(
+   <StyledComponents.DevcardsPage>
+    <h1>Devcards</h1>
+
+    <StyledComponents.SampleWindow>
+     {this.RenderSample(this.state.text)}
+    </StyledComponents.SampleWindow>
+
+    <StyledComponents.CodeWindow>
+     <CodeMirror value={SampleCode1} options={ { readOnly: true, lineNumbers: true, mode: 'javascript' } } autoFocus={true} />
+    </StyledComponents.CodeWindow>
+   </StyledComponents.DevcardsPage>
+   )
+ }
 }
 
 export default DevcardsPage
