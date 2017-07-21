@@ -2,16 +2,15 @@ import React from 'react'
 import { ConnectedRouter as Router } from 'react-router-redux'
 import { Route } from 'react-router-dom'
 
-import { NavBar } from 'components'
 import { history } from 'store'
+import { Layout } from 'components'
+
 import {
   Home
 } from 'routes'
 
 export default () => <Router history={history}>
-  <div>
-    <NavBar />
-
+  <Layout>
     <Route exact path='/' component={Home} />
-  </div>
+  </Layout>
 </Router>

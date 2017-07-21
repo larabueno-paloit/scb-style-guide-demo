@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 const Wrapper = styled.div`
   background-color: #5CC3C8;
@@ -12,8 +12,8 @@ const Wrapper = styled.div`
 
 const Header = (props) => (
   <Wrapper>
-      {props.title}
+    {props.title}
   </Wrapper>
-);
+)
 
-export default Header;
+export default Header
