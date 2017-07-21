@@ -10,10 +10,8 @@ const Wrapper = styled.div`
   text-align: left;
 `
 
-const Header = (props) => (
-  <Wrapper>
-    {props.title}
-  </Wrapper>
-)
+const Header = ({ children }) => <Wrapper>
+  {children}
+</Wrapper>
 
 export default Header
