@@ -18,7 +18,7 @@
     "react-router-dom": "^4.0.0",
     "react-router-redux": "^5.0.0-alpha.6",
     "react-scroll": "^1.5.4",
-    "react-simple-dropdown": "^3.0.0",
+    "recompose": "^0.24.0",
     "redux": "^3.6.0",
     "styled-components": "^2.1.0"
   },
@@ -31,7 +31,6 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.6",
     "babel-plugin-transform-regenerator": "^6.24.1",
     "babel-preset-env": "^1.5.2",
-    "babel-preset-es2016": "^6.24.1",
     "babel-preset-react": "^6.22.0",
     "babel-preset-stage-0": "^6.24.1",
     "copy-webpack-plugin": "^4.0.1",
