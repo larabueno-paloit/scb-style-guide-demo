@@ -50,10 +50,11 @@ h6 {
 }
 
 .container {
-  text-align: center;
+  /*text-align: center;*/
   /*max-width: 1280px;*/
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   display: flex;
+  flex-direction: row;
   background-color: #f2f2f2;
 }
 

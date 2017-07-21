@@ -10,6 +10,7 @@ import TablePage from './components/TablePage/TablePage';
 import { BrowserRouter, Route } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 import Nav from './components/Nav/Nav.js';
+import DevcardsPage from './components/devcards/devcardsPage.js';
 
 const Root = () => {
   return (
@@ -23,6 +24,7 @@ const Root = () => {
               <Route exact path="/icons" component={IconsPage} />
               <Route exact path="/table" component={TablePage} />
               <Route exact path="/typography" component={TypographyPage} />
+              <Route exact path="/devcards" component={DevcardsPage} />
             </div>
           </div>
         </BrowserRouter>
