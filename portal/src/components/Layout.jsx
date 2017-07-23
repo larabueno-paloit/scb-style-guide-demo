@@ -10,6 +10,7 @@ const Wrapper = styled.div`
 const Main = styled.div`
   height: 100vh;
   overflow: scroll;
+  width: 100vw;
 `
 
 export default ({ children }) => <Wrapper>
