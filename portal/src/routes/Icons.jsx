@@ -32,7 +32,7 @@ const Section = styled.section`
 `
 
 const Title = styled.div`
-  font-size: 24px;
+  font-size: 25px;
   padding-bottom: 20px;
 `
 
@@ -50,12 +50,12 @@ const IconWrapper = styled.div`
 `
 
 const icons = [
-  'Search','Menu','Options', 'Close', 'Dropdown', 'Expand', 'Favourite','Favourite filled', 'Unchecked box',
+  'Search', 'Menu', 'Options', 'Close', 'Dropdown', 'Expand', 'Favourite', 'Favourite filled', 'Unchecked box',
   'Check all', 'Check box', 'Preview', 'icon id', 'Doc uploaded', 'icon id', 'Word file', 'Excel File', 'Document',
   'PDF file', 'icon id', 'Import', 'icon id', 'Export', 'icon id'
 ]
 
-const listItems = icons.map((icons,i) =>
+const listItems = icons.map((icons, i) =>
   <IconWrapper key={i}>
     {icons}
   </IconWrapper>

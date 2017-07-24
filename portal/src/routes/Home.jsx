@@ -41,7 +41,7 @@ const Flex = styled.div`
 `
 
 const Title = styled.div`
-  font-size: 24px;
+  font-size: 25px;
   padding-bottom: 20px;
 `
 
